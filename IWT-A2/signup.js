@@ -6,6 +6,11 @@ var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
 
+/*hide message box when onloading*/
+window.onload = function(){
+  document.getElementById("message").style.display='none';
+};
+
 // When the user clicks on the password field, show the message box
 myInput.onfocus = function() {
   document.getElementById("message").style.display = "block";

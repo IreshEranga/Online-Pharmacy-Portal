@@ -21,6 +21,12 @@
                 <label for="lname"><b>Last Name</b></label><br><br>
                 <input type="text" name="lname" placeholder="Enter Last Name" required><br><br>
 
+                <label for="gender"><b>Gender</b></label><br><br>
+                <input type="radio" name="gender" id="" value="Male"> Male <br>
+                <input type="radio" name="gender" id=""> Female <br>
+                <input type="radio" name="gender" id=""> Other
+
+                <br><br>
                 <label for="mnumber"><b>Mobile Number</b></label><br><br>
                 <input type="tel" name="mnumber" placeholder="Enter Mobile Number" pattern="07[1,2,5,6,7,8][0-9]{7}" maxlength="10"  required><br><br>
 
@@ -29,6 +35,9 @@
 
                 <label for="adrs"><b>Address</b></label><br><br>
                 <input type="text" name="adrs" placeholder="Enter Address" required><br><br>
+
+                <label for="dob"><b>Date Of Birth</b></label><br><br>
+                <input type="date"><br><br>
 
                 <label for="psw"><b>Password</b></label><br><br>
                 <input type="password" id="psw" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
@@ -42,17 +51,25 @@
             </div>
         </form>
 
+        <div class="login">
+            <img class="log" src="./images/signup.jpg" alt="">
+        </div>
+
         <!--velidation message-->
-        <div id="message">
-            <h3>Password must contain the following:</h3>
+        <div id="message" class="container2">
 
-            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <div class="container3">
+                <h3>Password must contain the following:</h3>
 
-            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-
-            <p id="number" class="invalid">A <b>number</b></p>
-
-            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    
+                <p id="number" class="invalid">A <b>number</b></p>
+    
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+            
 
           </div>
 

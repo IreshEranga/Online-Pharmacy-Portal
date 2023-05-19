@@ -8,8 +8,10 @@
 .container {
     background-color: #f1f1f1;
     padding: 20px;
-    margin: 100px 400px 20px 400px;
+    margin: 100px 600px 20px 200px;
 }
+
+
 
 input[type=text]:focus, 
 input[type=password]:focus {
@@ -22,14 +24,17 @@ input[type=password]:focus {
     margin-bottom: 25px;
   }
 
-* The message box is shown when the user clicks on the password field */
+/*The message box is shown when the user clicks on the password field */
 #message {
   display:none;
-  background: #f1f1f1;
   color: #000;
-  position: relative;
   padding: 20px;
-  margin-top: 10px;
+  
+}
+
+/*message*/
+.container2{
+  background-color: #000000a9;
 }
 
 #message p {
@@ -38,9 +43,21 @@ input[type=password]:focus {
 }
 #message{
     padding: 20px;
-    margin: 0 400px;
+    margin: -800px 30px 0 1000px ;
 }
 
+.container3{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  opacity: 1;
+}
+
+.login .log{
+  position: relative;
+  bottom: 1000px;
+  left: 1000px;
+  opacity: 1;
+}
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
     color: green;
@@ -99,4 +116,6 @@ input[type=password]:focus {
 .container .sbtn:hover{
     background-color: black;
     color: white;
+    border-radius: 20px;
 }
+
