@@ -14,6 +14,16 @@ body{
     margin: 100px 600px 20px 200px;
     box-shadow: 10px 20px rgba(22, 24, 24, 0.2);
 }
+
+.container h1{
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); color: rgb(179, 19, 228);}
+  100% { transform: translateY(0); }
+}
 /*
 form{
   width: 23em;

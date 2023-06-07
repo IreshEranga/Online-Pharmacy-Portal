@@ -63,15 +63,42 @@
   }
   a{
     text-decoration: none;
+    cursor: pointer;
   }
   
+  /*
   .r2 .maccount a img{
     border-radius: 60%;
     background-color: yellow;
     width: 30px;
     height: 30px;
     margin-top: 5px;
-  }
+  }*/
+
+  
+  .shopping{
+    position: relative;
+    right: 60px;
+    margin-top:-5px ;
+    text-align: right;
+}
+.header1 .shopping img{
+    width: 30px;
+    margin-top: -7px;
+}
+.shopping span{
+    background: rgb(150, 12, 230);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+    margin-left: 65px;
+}
   
   ion-icon {
     font-size: 30px;
