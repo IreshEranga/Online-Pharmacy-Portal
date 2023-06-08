@@ -1,0 +1,437 @@
+/*reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    background-image: linear-gradient(to left, rgb(156, 42, 223), rgb(85, 173, 207));
+}
+
+.boxright{
+    margin-left: 800px;
+    margin-top: -500px;
+    position: relative;
+   background-color: #bcbbff;
+   padding: 40px;
+   width: 40%;
+   height: 300px;
+   box-shadow: 8px 8px ;
+   border-radius: 10px;
+}
+  
+.boxright h3{
+    font-family: cursive;
+    font-size: 50px;
+    color: #9609a8;
+}
+
+.boxright p{
+    font-size: 20px;
+    color: rgb(12, 1, 1);
+}
+
+.login_form{
+    position: relative;
+    right: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 200px;
+}
+
+.login_form p{
+    margin-top: 18px;
+}
+
+.login_form p a{
+    border: 1px solid black;
+    background-color:  rgb(28,164,248);
+    padding: 1px;
+    margin-top: 1px;
+    color: white;
+    text-decoration: none;
+
+}
+.form{
+    background-color: white;
+    width: 23em;
+    padding:2em;
+    border-radius: 1em;
+    box-shadow: 0 10px 25px rgba(90,100,100,.2);
+}
+
+.form_title{
+    font-weight: 300;
+    margin-bottom: 1.3em;
+}
+
+.form_div{
+    position: relative;
+    height: 3em;
+    margin-bottom: 1.6em;
+}
+
+/*form inputs*/
+.form_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: .1em solid #dadce0;
+    border-radius: .5em;
+    outline: none;
+    padding: 1em;
+    z-index: 1;
+    background: none;
+}
+
+/*form labels*/
+.form_label{
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    padding: 0 .25em;
+    background-color: #fff;
+    color: #80868b;
+    font-size: 1em;
+    transition: .4s;
+}
+
+/*form buttons*/
+.form_button{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 1em 2em;;
+    outline: none;
+    border: none;
+    background-color: rgb(28,164,248);
+    color: #fff;
+    font-size: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 6.3em;
+}
+
+.form_button:hover{
+    transform: scale(0.90);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.20);
+}
+
+/*on click moment*/
+.form_input:focus + .form_label{
+    top: -.5em;
+    left: .8em;
+    color: rgb(28,164,248);
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label{
+    top: -.5em;
+    left: .8em;
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input:focus{
+    border: .1em solid rgb(28,164,248);
+}
+
+/*captcha*/
+.login_form #captcha{
+    margin: 15px 0px;
+}
+
+/*captcha preview*/
+.login_form #captcha .preview{
+    color: #555;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    border-radius: 0.5em;
+    margin-bottom: 1.6em;
+
+}
+
+.form_input_captcha {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: 0.1em solid #dadce0;
+    border-radius: 0.5em;
+    outline: none;
+    padding: 1em;
+    z-index: 1;
+    background: none;
+} 
+
+
+.form_label_captcha{
+    position: absolute;
+    left: 1em;
+    top: 5.2em;
+    padding: 0 .25em;
+    background-color: #fff;
+    color: #80868b;
+    font-size: 1em;
+    transition: .4s;
+}
+
+.form_input_captcha:focus + .form_label_captcha{
+    top: 4.7em;
+    left: .8em;
+    color: rgb(28,164,248);
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input_captcha:not(:placeholder-shown).form_input_captcha:not(:focus) + .form_label_captcha{
+    top: 4.6em;;
+    left: .8em;
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input_captcha:focus{
+    border: .1em solid rgb(28,164,248);
+}
+
+.login_form #captcha .preview span{
+    display: inline-block;
+    user-select: none;
+}
+
+.login_form #captcha .captcha_form{
+    display: flex;
+}
+
+.login_form #captcha .captcha_form input{
+    width: 100%;
+    font-size: 1em;
+    border-radius: 0.5em;
+    outline: none; 
+    padding: 1em;
+    z-index: 1;
+    background: none;
+}
+
+
+.login_form #captcha .captcha_form .captcha_refersh{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #fff3f3;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 0.5em;
+    margin-left: 5px;
+}
+
+.captcha_refersh{
+    transition: .4s;
+}
+
+.captcha_refersh:hover{
+    transition: .4s;
+    transform: scale(0.90);
+}
+
+/*image*/
+.limg img{
+    display: flex;
+    position: relative;
+    left: 1050px;
+    bottom: 500px;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(97, 149, 87, 0.5);
+}
+
+
+/*header footer*/
+.header1 {
+    background-color: #0096DA;
+    height: 30px;
+    width: 1540px;
+    margin-left: -12px;
+}
+
+.name {
+    margin-top: -10px;
+}
+
+.header2 {
+    background-color: #59bae7;
+    height: 90px;
+    width: 1540px;
+    margin-left: -12px;
+}
+
+.logoimg {
+    height: 80px;
+    width: 100px;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+.search-container {
+    display: flex;
+    width: 500px;
+    margin-left: 500px;
+    margin-top: -65px;
+  }
+  
+  #search-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  #search-button {
+    padding: 8px 16px;
+    background-color: #a1cadf;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #search-results {
+    margin-top: 16px;
+  }
+
+.header2 a{
+    float: right;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    padding: 30px;
+    margin-top: -62px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.header3 {
+    background-color: #a1cadf;
+    height: 40px;
+    width: 1540px;
+    margin-left: -12px;
+    margin-top: 20px; 
+}
+
+.content3 {
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.content3 a{
+    float: left;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    padding: 30px;
+    margin-top: -25px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: -5px;
+}
+
+
+
+.footer {
+    width: 1536px;
+    margin-left: -8px;
+    margin-bottom: -10px;
+}
+
+.footer-yellow {
+    background-color: #59bae7;
+    height: 350px;
+}
+
+.footer-black {
+    background-color: black;
+    height: 20px;
+    color: white;
+    margin-top: -22px;
+}
+
+.product-range {
+    margin-left: 120px;
+}
+
+.product-range a{
+    color: black;
+    line-height: 15px;
+    padding: 30px;
+    margin-top: -25px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: -30px;
+}
+
+.information {
+    margin-top: -310px;
+    margin-left: 510px;
+}
+
+.information a{
+    color: black;
+    line-height: 15px;
+    padding: 30px;
+    margin-top: -250px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: -30px;
+}
+
+.customer-servise {
+    margin-top: -150px;
+    margin-left: 850px;
+}
+
+.customer-servise a{
+    color: black;
+    line-height: 15px;
+    padding: 30px;
+    margin-top: -250px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: -28px;
+}
+
+.followus {
+    margin-left: 1200px;
+    margin-top: -149px;
+}
+
+.followus img {
+    width: 20px;
+    height: 20px;
+}
+
+.followus .imgbtn {
+    background-color: #59bae7;
+    border-radius: 0px;
+    border-color: #59bae7;
+}
