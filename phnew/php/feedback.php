@@ -1,3 +1,36 @@
+<?php
+
+$localhost = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "pharmacy2";
+
+$conn = mysqli_connect($localhost,$dbusername,$dbpassword,$dbname);
+
+if (isset($_POST["submit"])){
+
+  $rating = $_POST["rating"];
+  $comment = $_POST["comment"];
+
+  $sql = "INSERT INTO feedback (Rating, comment) VALUES (?,?)";
+
+  $stmt = $conn->prepare($sql);
+  $stmt->bind_param("is", $rating, $comment);
+
+  if ($stmt->execute()){
+    echo "Inserted Successfully";
+  } else{
+    echo "Error : " . $stmt->error;
+  }
+
+  $stmt->close();
+  $conn->close();
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,15 +134,15 @@
         <form action="" method="post">
 
             <div class="rating">
-                <input type="radio" id="star1" name="rating" value="1">
+                <input type="radio" id="star1" name="rating" value="5">
                 <label for="star1"></label>
-                <input type="radio" id="star2" name="rating" value="2">
+                <input type="radio" id="star2" name="rating" value="4">
                 <label for="star2"></label>
                 <input type="radio" id="star3" name="rating" value="3">
                 <label for="star3"></label>
-                <input type="radio" id="star4" name="rating" value="4">
+                <input type="radio" id="star4" name="rating" value="2">
                 <label for="star4"></label>
-                <input type="radio" id="star5" name="rating" value="5">
+                <input type="radio" id="star5" name="rating" value="1">
                 <label for="star5"></label>
                 
               </div>
@@ -117,13 +150,13 @@
             
               <div class="comment-box">
                   <textarea id="comment" name="comment" placeholder="Leave a comment..."></textarea>
-                  <button type="submit">Submit</button>
+                  <button type="submit" name="submit">Submit</button>
               </div>
               
         </form>
        
 
-        <br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br>
 
           
           

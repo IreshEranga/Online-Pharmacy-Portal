@@ -46,15 +46,20 @@
     document.querySelector(".login_form .form_button").addEventListener("click",function(){
         let inputcaptchavalue = document.querySelector(".login_form #captcha input").value;
 
-        if (inputcaptchavalue === captchaValue) 
+       /* if (inputcaptchavalue === captchaValue) 
         {
             // alert for successful log in
-            alert("Log in success");
+            alert("Captcha Input Is Correct");
         }
         else
         {
             // allert for invalid capthcha
             alert("Invalid Captcha");
+        }*/
+
+        if (inputcaptchavalue !== captchaValue)
+        {
+            alert("Invalid Captcha!!!!");
         }
     });
 })();

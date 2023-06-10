@@ -1,3 +1,47 @@
+
+
+<?php
+
+$localhost = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "pharmacy2";
+
+$conn = mysqli_connect($localhost, $dbusername, $dbpassword, $dbname);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST['psw'];
+
+    $query = "SELECT * FROM user WHERE Email = '$email' AND Password = '$password'";
+    $result = mysqli_query($conn, $query);
+    
+    if (mysqli_num_rows($result) == 1) {
+        // User found, login successful
+        echo "Login successful!";
+        // Add your code to redirect the user to the desired page
+    } else {
+        // User not found or invalid credentials
+        echo "Invalid email or password!";
+    }
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +55,7 @@
 <body>
        <!--LogIn form--> 
     <div class="login_form">
-        <form action="../php/home.php" class="form" method="post">
+        <form  class="form" method="post">
             <h1 class="form_title"> Log In </h1>
 
             <div class="form_div">
@@ -43,8 +87,7 @@
             <!--Submit button-->
             <input type="submit" class="form_button" value="Log In">
 
-            <p>If you don't have an account <br> click here to <a href="signUp.html">Sign Up</a>  </p><br>
-
+            <p>If you don't have an account <br> click here to <a href="signUp.html">Sign Up</a> </p> <br>
             <label>Forgot password? <a href="..//html/pwreset1.html">Reset password</a></label>
         </form>
         

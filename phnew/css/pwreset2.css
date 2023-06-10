@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(90deg, #020024 0% ,#090979 1%, #00d4ff 100%);
+    background-size: cover;
+    background-repeat:repeat;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*input field*/
+.form-box{
+    background-color: #fff;
+    display: flex;
+    width: 1100px;
+    height: 780px;
+    justify-content: center;
+    padding-right: 100px;
+    padding-top: 250px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 100px;
+    margin: 180px 50px;
+    color: #000000;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h2{
+    text-align: center;
+    padding-top: 33px;
+    color: #000;
+    font-weight: 600;
+}
+
+.input-field{
+    line-height: 3em;
+}
+
+.submit{
+    text-align: center;
+    line-height: 2em;
+}
+
+/*log in & sign up & pw reset buttons*/
+.submit button{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    background: #0197E6;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.submit button:hover{
+    color:#ebd4d4;
+}
+
+#newPassword,#conf-pass{
+    border: 1px solid #A5A2A2;
+    border-radius: 6px;
+    height: 30px;
+    padding-left: 12px;
+    border-color: #0197E6;
+    margin-left: 42px;
+}
+
+::placeholder{
+    color: #000;
+}
+
+/*text description field*/
+.description-field{
+    width: 600px;
+    height: 780px;
+    background-color: #0197E6;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 134px;
+    margin-left: -80px;
+    margin-top: -250px;
+    padding-left: 110px;
+    padding-right: 50px;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+.text-description h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+    line-height: normal;
+}
+
+.text-description p{
+    padding-bottom: 30px;
+}
+
+/*home btn*/
+.home-btn{
+    margin-top: 100px;
+    margin-bottom: 140px;
+    display: flex;
+    cursor: pointer;
+}
+
+.home-btn:hover{
+    transform: scale(1.01);
+}
+
+#H-btn{
+    border: none;
+    background: transparent;
+}
+
+#H-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#back-logo{
+    width: 15px;
+}
+
+/*read more btn*/
+
+#RM-btn{
+    width: 159px;
+    height: 51px;
+    border:2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+#RM-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#RM-btn:hover{
+    transform: scale(1.08);
+}
+
+@media(max-width:1173px){
+    .form-box{
+        flex-direction: column;
+        height: 1700px;
+    }
+
+    /*text description*/
+    .description-field{
+        width: 1100px;
+        align-items: center;
+        padding:25px 0 25px 0;
+        margin-top: -724px;
+        margin-left: 0px;
+    }
+
+    .text-description h2,p{
+        text-align: center;
+    }
+
+    #H-btn{
+        margin-right: 300px;
+    }
+
+    /*form*/
+    .form-box{
+        height: 750px;
+    }
+
+    form h2{
+        padding-left: 100px;
+        padding-top: 60px;
+    }
+
+    .input-field{
+        padding: 0 250px 0 290px;
+        margin: 0 0 0 30px;
+    }
+
+    #newPassword,#conf-pass{
+        margin-left: 140px;
+    }
+
+    .submit{
+        margin-left: 100px;
+    }
+}

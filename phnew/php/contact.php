@@ -1,11 +1,48 @@
+<?php
+
+$localhost = "localhost"; // localhost
+$dbusername = "root"; // username of phpmyadmin
+$dbpassword = "";  // password of phpmyadmin
+$dbname = "pharmacy2";  // database name
+ 
+// connection string
+$conn = mysqli_connect($localhost, $dbusername, $dbpassword, $dbname);
+
+if (isset($_POST["submit"])) {
+
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
+
+  $sql = "INSERT INTO contact_us (name, email, message) VALUES (?,?,?)";
+
+  $stmt = $conn->prepare($sql);
+  $stmt->bind_param("sss", $name, $email, $message);
+
+  if ($stmt->execute()){
+    echo "Inserted Successfully";
+  } else{
+    echo "Error: " . $stmt->error;
+  }
+
+  $stmt->close();
+  $conn->close();
+}
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Gateway</title>
+  <title>Contact Us</title>
   <link rel="icon" href="../images/mcare.png">
-  <link rel="stylesheet" href="../css/payment.css">
+  <link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
 <body>
 
@@ -46,7 +83,7 @@
     </div>
 
     <div class="navbar">
-        <a href="../php/home.php">Home</a>
+        <a href="..//html/home.html">Home</a>
         <a href="..//html/aboutUs.html">About Us</a>
         <a href="../html/contact.html">Contact Us</a>
         <div class="dropdown">
@@ -94,57 +131,25 @@
         </div> 
       </div>
 </div> <br><br>
-
   <div class="container">
-    <h1>Payment Gateway</h1>
-    
-    <form method="post" action="../php/payment.php">
-      <!--<h2>Billing Information</h2>
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-      </div>
-      <div class="form-group">
-        <label for="address">Billing Address</label>
-        <textarea id="address" name="address" placeholder="Enter your billing address" required></textarea>
-      </div>-->
-      
-      <h2>Payment Details</h2>
-      <div class="form-group">
-        <label for="card">Card Number</label>
-        <input type="text" id="card" name="card" placeholder="Enter your card number" maxlength="16" required>
-      </div>
-      <div class="form-group">
-        <label for="expiry">Expiration Date</label>
-        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-      </div>
-      <div class="form-group">
-        <label for="cvv">CVV</label>
-        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
-      </div>
-      <!--
-      <h2>Order Summary</h2>
-     <div class="form-group">
-        <label for="order-summery">Order Summury</label>
-        <textarea id="order-summery" name="order-summery" placeholder="Enter your purchase details" required></textarea>
-      </div>
-    -->
-      <h2>Delivery Details</h2>
-      <div class="form-group">
-        <label for="delivery-address">Delivery Address</label>
-        <textarea id="delivery-address" name="delivery_address" placeholder="Enter your delivery address" required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="contact">Contact Number</label>
-        <input type="text" id="contact" name="contact" placeholder="Enter your contact number" pattern="07[0,1,2,5,6,7,8][0-9]{7}" maxlength="10" required>
-      </div>
-      
-      <button type="submit" name="paybtn">Pay Now</button>
-    </form>
+    <div class="left-column">
+      <img src="../images/pharmacy-image.jpg" alt="Pharmacy" class="pharmacy-image">
+    </div>
+    <div class="right-column">
+      <h1>Contact Us</h1>
+      <form method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit" name="submit">
+      </form>
+    </div>
   </div>
 
 

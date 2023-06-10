@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediCare Pharmacy - Feedback</title>
+    <title>MediCare Pharmacy - FAQ</title>
     <link rel="icon" href="../images/mcare.png">
-    <link rel="stylesheet" href="../css/feedback.css">
+    <link rel="stylesheet" href="../css/faq.css">
 </head>
 <body>
-    
-  <!--header-->
-  <div class="header1">
+   <!--header-->
+   <div class="header1">
     <div class="logo">
         <img src="../images/mcare.png" alt="" width="150px">
 
@@ -27,8 +26,8 @@
 
             <div class="maccount">
                 <ul>
-                    <li><a href="http://google.com">My Account</a></li>
-                    <li><a href="http://facebook.com">Sign In</a></li>
+                    <li><a href="../html/myaccountAccountinformation.html">My Account</a></li>
+                    <li><a href="../html/SignIn.html">Sign In</a></li>
                     <!--
                         <li><a href="#"><img src="../images/cart.png" alt=""></a></li>
                        -->
@@ -94,39 +93,42 @@
         </div> 
       </div>
 </div> <br><br>
+    
+    <div class="box">
+        <p class="heading">FAQs</p>
+        <div class="faqs">
+            <details>
+                <summary>How do I make a purchase?</summary>
+                <p>To place an order, follow the steps & place your order through our Website
+                    </p>
+            </details>
+            <details>
+                <summary>What payment methods do MediCare accept?</summary>
+                <p>We got all sorts of Payments to offer you ! COD available Island-wide.
+                     Bank Payments / Online Bank Transfers / Payment Link or simply 
+                     order through our Website & use your Shopping Card.
+                    </p>
+            </details>
+            <details>
+                <summary>Can I ship to multiple addresses?</summary>
+                <p>Apologies, but one Order will only go to the given specific Address, 
+                    if in case you need to send a Gift to any loved ones, 
+                    we will send to any address you provide without the Invoice Printed on.
+                    </p>
+            </details>
+            <details>
+                <summary>How long does a delivery take, and what are the charges?</summary>
+                <p>Our Standard delivery is within 3-5 working days, 
+                    but packages sent to Col 01-15 will only take 1-3 working days.
+                     Standard Fee will be 250/= for any destination & 350/= 
+                     for Outstation ( Northern Province Areas )
+                    </p>
+            </details>
+        </div>
+    </div>
 
-    <div class="container">
-        <h2>Give Your Feedback</h2>
 
-        <form action="" method="post">
-
-            <div class="rating">
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1"></label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2"></label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3"></label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4"></label>
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5"></label>
-                
-              </div>
-          </div>
-            
-              <div class="comment-box">
-                  <textarea id="comment" name="comment" placeholder="Leave a comment..."></textarea>
-                  <button type="submit">Submit</button>
-              </div>
-              
-        </form>
-       
-
-        <br><br><br><br><br><br><br><br>
-
-          
-          
+    
 <!--Footer-->
 <div class="footer">
 
@@ -146,13 +148,13 @@
         <div class="information"><br>
             <h3>Imformation</h3><br>
             <a href="..//html/aboutUs.html">About Us</a><br><br>
-            <a href="index2.html">Privacy Policy</a><br><br>
+            <a href="../html/contact.html">Privacy Policy</a><br><br>
         </div>
 
         <div class="customer-servise"><br><br>
             <h3>Customer Service</h3><br>
             <a href="..//html/FAQ.html">FAQ</a><br><br>
-            <a href="../html/contact.html">Contact Us</a><br><br>
+            <a href="index2.html">Contact Us</a><br><br>
         </div>
 
         <div class="followus"><br><br>
@@ -181,7 +183,7 @@
     
 </div>
 
-   
+    
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

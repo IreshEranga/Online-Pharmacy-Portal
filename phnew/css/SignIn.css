@@ -255,6 +255,9 @@ body{
     transform: scale(0.90);
 }
 
+a{
+    text-decoration: none;
+}
 /*image*/
 .limg img{
     display: flex;
