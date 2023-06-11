@@ -55,9 +55,19 @@
             
           </button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+          < <a href="../php/heart.php"><h5>HEART</h5></a>
+                <a href="../php/nervous.php"><h5>CENTRAL NERVOUS SYSTEM</h5></a>
+                <a href="#"><h5>EAR, NOSE, THROAT</h5></a>
+				<a href="#"><h5>DIABETES</h5></a>
+				<a href="#"><h5>EYE</h5></a>
+				<a href="#"><h5>GASTRO INTESTINAL SYSTEM</h5></a>
+				<a href="#"><h5>INFECTIONS</h5></a>
+				<a href="#"><h5>MALIGNANT DISEASE & IMMUNOSUPPRESSIONS</h5></a>
+				<a href="#"><h5>MUSCLE & JOINT</h5></a>
+				<a href="#"><h5>VITAMINS & MINERALS</h5></a>
+				<a href="#"><h5>OBSTERICS & GYNAECOLOGY & URINARY TRACT</h5></a>
+				<a href="#"><h5>RESPIRATORY</h5></a>
+				<a href="#"><h5>SKIN (PHARMA)</h5></a>
           </div>
         </div> 
         
@@ -66,9 +76,10 @@
             
           </button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="../php/heart.php"><h5>HEART</h5></a>
+            <a href="../php/firstaid.php"><h5>FIRST AID</h5></a>
+            <a href="../php/healthdevices.php"><h5>HEALTH DEVICES</h5></a>
+            <a href="#"><h5>SUPPORTS & BRACES</h5></a>
           </div>
         </div> 
         
@@ -77,9 +88,19 @@
             
           </button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="../php/motherbaby.php"><h5>MOTHER & BABY</h5></a>
+                <a href="#"><h5>COUGH, COLD & ALLERGY</h5></a>
+                <a href="#"><h5>DIET & NUTRITION</h5></a>
+				<a href="#"><h5>BEAUTY SUPPLEMENTS</h5></a>
+				<a href="#"><h5>ADULT & DIABETIC CARE</h5></a>
+				<a href="#"><h5>PREVENTIVE CARE</h5></a>
+				<a href="#"><h5>PAIN & FEVER</h5></a>
+				<a href="#"><h5>EYES & EARS</h5></a>
+				<a href="#"><h5>TRADITIONAL REMEDIES</h5></a>
+				<a href="#"><h5>STOMACH & DIGESTION</h5></a>
+				<a href="#"><h5>PET CARE</h5></a>
+				<a href="#"><h5>MOSQUITO PROTECTION</h5></a>
+				<a href="#"><h5>SEXUAL HEALTH</h5></a>
           </div>
         </div> 
         
@@ -88,24 +109,28 @@
             
           </button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="../php/nourishment.php"><h5>NOURISHMENT</h5></a>
+                <a href="#"><h5>ACCESSORIES</h5></a>
+                <a href="#"><h5>SKIN CARE</h5></a>
+				<a href="#"><h5>HAND & FOOT CARE</h5></a>
+				<a href="#"><h5>BODY CARE</h5></a>
+				<a href="#"><h5>WOMENS PERSONAL CARE</h5></a>
+				<a href="#"><h5>ORAL CARE</h5></a>
           </div>
         </div> 
       </div>
 </div> <br><br>
     <div class="box1">
         <ul>
-            <li><a href="myaccountAccountinformation.html" class="l">Account Information</a></li><br><br>
+            <li><a href="../php/accinformation.php" class="l">Account Information</a></li><br><br>
 
-            <li><a href="myaccountmyorders.html" class="l">My Orders</a></li><br><br>
+            <li><a href="../php/accorders.php" class="l">My Orders</a></li><br><br>
 
-            <li><a href="myaccountmyprescription.html" class="l">My Prescription</a></li><br><br>
+            <li><a href="../php/accpre.php" class="l">My Prescription</a></li><br><br>
 
-            <li><a href="" class="l">Edit Account Details</a></li><br><br>
+            <li><a href="#" class="l">Edit Account Details</a></li><br><br>
 
-            <li><a href="" class="l">My Product reviews</a></li><br><br>
+            <li><a href="../php/feedback.php" class="l">My Product reviews</a></li><br><br>
         </ul>
     </div>
     
@@ -114,7 +139,7 @@
         <h3>Account Information</h3><br>
         
         <br><br><hr><br><br>
-        <form action="">
+        <form action="" method="post">
             <label for="fname">First Name</label>
             <p>Iresh</p>
 
@@ -138,35 +163,36 @@
     </div>
 
 <!--Footer-->
+  
 <div class="footer">
 
     <div class="footer-yellow">
-  
+
         <div class="product-range">
-            <br><h3>Product Range</h3><br>
-            <a href="index2.html">Health</a><br><br>
-            <a href="index2.html">Skin Care</a><br><br>
-            <a href="index2.html">Hair Care</a><br><br>
-            <a href="index2.html">Personal Care</a><br><br>
-            <a href="index2.html">Baby</a><br><br>
-            <a href="index2.html">Cosmetic & Fragrances</a><br><br>
-            <a href="index2.html">Pet</a>
+            <br><h2>Product Range</h2><br>
+            <a href="../php/healthdevices.php">Health</a><br><br>
+            <a href="#">Skin Care</a><br><br>
+            <a href="#">Hair Care</a><br><br>
+            <a href="#">Personal Care</a><br><br>
+            <a href="#">Baby</a><br><br>
+            <a href="#">Cosmetic & Fragrances</a><br><br>
+            <a href="#">Pet</a>
         </div>
-  
-        <div class="information"><br><br>
-            <h3>Imformation</h3><br>
-            <a href="..//html/aboutUs.html">About Us</a><br><br>
-            <a href="index2.html">Privacy Policy</a><br><br>
+
+        <div class="information"><br>
+            <h2>Imformation</h2><br>
+            <a href="../php/aboutUs.php">About Us</a><br><br>
+            <a href="#">Privacy Policy</a><br><br>
         </div>
-  
+
         <div class="customer-servise"><br><br>
-            <h3>Customer Service</h3><br>
-            <a href="..//html/FAQ.html">FAQ</a><br><br>
-            <a href="../html/contact.html">Contact Us</a><br><br>
+            <h2>Customer Service</h2><br>
+            <a href="../php/FAQ.php">FAQ</a><br><br>
+            <a href="../php/contact.php">Contact Us</a><br><br>
         </div>
-  
+
         <div class="followus"><br><br>
-            <h3>Follow Us</h3><br>
+            <h2>Follow Us</h2><br>
             <button class="imgbtn"><img src="../images/facebook.png"></button>
             <button class="imgbtn"><img src="../images/youtube.png"></button>
             <button class="imgbtn"><img src="../images/instagram.png"></button>
@@ -179,11 +205,12 @@
                 Sri Lanka. <br><br>
                 <a href="tel:+94 77 123 4567">+94 77 123 4567</a>  <br>
                 <a href="tel:+94 37 123 4356">+94 37 123 4356</a>
+                
             </p>
         </div>
-  
+
     </div>
-  
+
     <div class="footer-black">
         <center><h4 class="h4">ALL RIGHTS RESERVED ©️ 2023 HEALTH CARE PHARMACY</h4></center>
     </div>

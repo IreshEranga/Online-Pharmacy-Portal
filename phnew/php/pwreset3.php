@@ -16,7 +16,7 @@
 
                     <div class="home-btn">
                         <img id="back-logo" src="../images/back logo.png" alt="">
-                        <button type="button" id="H-btn"><a href="..//html/About Us.html">Home</a></button>
+                        <button type="button" id="H-btn"><a href="..//php/home.php">Home</a></button>
                     </div>
         
                     <div class="text-description">
@@ -27,7 +27,7 @@
                     </div>
         
                     <div class="read-more">
-                        <button type="button" id="RM-btn"><a href="../html/aboutUs.html">Read more</a></button>
+                        <button type="button" id="RM-btn"><a href="../php/aboutUs.php">Read more</a></button>
                     </div>
         
                 </div>
@@ -39,7 +39,7 @@
             <h2>Password Changed !</h2>
 
            <div class="submit">
-                <button id="login" type="submit" name="login"> <a href="../html/SignIn.html">Log in</a> </button>
+                <button id="login" type="submit" name="login"> <a href="../php/SignIn.php">Log in</a> </button>
             </div>
 
         </form>

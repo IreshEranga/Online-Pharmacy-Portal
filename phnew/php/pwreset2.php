@@ -16,7 +16,7 @@
 
                     <div class="home-btn">
                         <img id="back-logo" src="../images/back logo.png" alt="">
-                        <button type="button" id="H-btn"><a href="..//html/About Us.html">Home</a></button>
+                        <button type="button" id="H-btn"><a href="..//php/home.php">Home</a></button>
                     </div>
         
                     <div class="text-description">
@@ -27,7 +27,7 @@
                     </div>
         
                     <div class="read-more">
-                        <button type="button" id="RM-btn"><a href="../html/aboutUs.html">Read more</a></button>
+                        <button type="button" id="RM-btn"><a href="../php/aboutUs.php">Read more</a></button>
                     </div>
         
                 </div>
@@ -46,7 +46,7 @@
                 <input type="text" name="conf-pass" id="conf-pass" placeholder="Confirm Password" required>
             </div>
 
-            <div class="submit"><a href="../html/pwreset3.html"><button id="next" type="submit" name="next" value="submit">Next</button></a>
+            <div class="submit"><a href="../php/pwreset3.php"><button id="next" type="submit" name="next" value="submit">Next</button></a>
                 
             </div>
 

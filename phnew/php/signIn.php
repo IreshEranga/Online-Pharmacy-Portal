@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_num_rows($result) == 1) {
         // User found, login successful
         echo "Login successful!";
+        header ('location: home.php');
         // Add your code to redirect the user to the desired page
     } else {
         // User not found or invalid credentials
@@ -53,9 +54,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/SignIn.css">
 </head>
 <body>
+
+
+
+
        <!--LogIn form--> 
-    <div class="login_form">
-        <form  class="form" method="post">
+<div class="login_form">
+        <form  class="form" method="post" >
             <h1 class="form_title"> Log In </h1>
 
             <div class="form_div">
@@ -87,8 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!--Submit button-->
             <input type="submit" class="form_button" value="Log In">
 
-            <p>If you don't have an account <br> click here to <a href="signUp.html">Sign Up</a> </p> <br>
-            <label>Forgot password? <a href="..//html/pwreset1.html">Reset password</a></label>
+            <p>If you don't have an account <br> click here to <a href="../php/signUp.php">Sign Up</a> </p> <br>
+            <label>Forgot password? <a href="..//php/pwreset1.php">Reset password</a></label>
         </form>
         
     </div>
