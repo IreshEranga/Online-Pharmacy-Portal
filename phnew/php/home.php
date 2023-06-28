@@ -270,6 +270,7 @@
             <h2>Customer Service</h2><br>
             <a href="../php/FAQ.php">FAQ</a><br><br>
             <a href="../php/contact.php">Contact Us</a><br><br>
+            <a href="../php/feedback.php">Feedback</a>
         </div>
 
         <div class="followus"><br><br>

@@ -142,7 +142,7 @@ if (isset($_POST["submit"])) {
         <div class="dropdown">
           <button class="dropbtn">Personal Care 
             
-          </button>
+          </button> <br><br>
           <div class="dropdown-content">
             <a href="../php/nourishment.php"><h5>NOURISHMENT</h5></a>
                 <a href="#"><h5>ACCESSORIES</h5></a>

@@ -11,6 +11,33 @@
 </head>
 <body>
 
+    <?php session_start(); 
+
+       $email = $_SESSION['email'];
+
+      // echo $email;
+
+       include 'config.php';
+
+       $sql = "SELECT * FROM user WHERE Email = '$email'";
+
+       $result = $con->query($sql);
+
+       if($result->num_rows>0){
+            while($row = $result->fetch_assoc()){
+                $fname = $row['Fname'];
+                $lname = $row['Lname'];
+                $gender = $row['Gender'];
+                $mobile = $row['Mobile_Number'];
+                $email = $row['Email'];
+                $adrs = $row['Address'];
+                $dob = $row['Date_Of_Birth'];
+                //$lname = $row['Lname'];
+            }
+       }
+    
+    ?>
+
    <!--header-->
    <div class="header1">
     <div class="logo">
@@ -118,6 +145,13 @@
 				<a href="#"><h5>ORAL CARE</h5></a>
           </div>
         </div> 
+        <!--<input type="button" value="logout" class ="right" name="logout">-->
+
+        <button type="submit" name="logout" class="right"> <a href="logout.php">LogOut</a></button>
+        <?php if(isset($_POST["logout"])){
+            header('Location: logout.php');
+            echo "Logout success";
+        } ?>
       </div>
 </div> <br><br>
     <div class="box1">
@@ -128,35 +162,38 @@
 
             <li><a href="../php/accpre.php" class="l">My Prescription</a></li><br><br>
 
-            <li><a href="#" class="l">Edit Account Details</a></li><br><br>
+            <li><a href="../php/editacc.php" class="l">Edit Account Details</a></li><br><br>
 
             <li><a href="../php/feedback.php" class="l">My Product reviews</a></li><br><br>
         </ul>
     </div>
     
     <div class="box2">
-        <h1>My Account</h1><br>
+        <h1>Welcome <?php echo" ".$fname." ".$lname  ?> </h1><br>
         <h3>Account Information</h3><br>
         
         <br><br><hr><br><br>
         <form action="" method="post">
             <label for="fname">First Name</label>
-            <p>Iresh</p>
+            <p><?php  echo"".$fname ?></p>
 
             <label for="lname">Last Name</label>
-            <p>Eranga</p>
+            <p><?php  echo"".$lname ?></p>
 
             <label for="gender">Gender</label>
-            <p>Male</p>            
+            <p><?php  echo"".$gender ?></p>            
 
             <label for="Mobile Number">Mobile Number</label>
-            <p>0718569741</p>
+            <p><?php  echo"".$mobile ?></p>
 
             <label for="E mail">E mail</label>
-            <p>Iresh@gmail.com</p>
+            <p><?php  echo"".$email ?></p>
 
             <label for="Address">Address</label>
-            <p>370/49,hbdachb ,jhbwjdcb h</p>
+            <p><?php  echo"".$adrs ?></p>
+
+            <label for="dob">Date Of Birth</label>
+            <p><?php  echo"".$dob ?></p>
 
             
         </form>

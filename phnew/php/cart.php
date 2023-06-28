@@ -156,7 +156,7 @@
             <h4 class="q">Order Total</h4>
             <h4 class="a">00.00</h4>
 
-            <button class="submit" type="submit">Proceed to Checkout</button> <br><br>
+            <button class="submit" type="submit">  <a href="payment.php"> Proceed to Checkout</a></button> <br><br>
             <button class="Proceed">Continue Shopping</button>
         </form>
     </div>

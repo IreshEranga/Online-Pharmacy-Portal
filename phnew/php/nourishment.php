@@ -35,10 +35,10 @@
                     <li><a href="../php/SignIn.php">Sign In</a></li><!--
                     <li><a href="#"><img src="../images/cart.png" alt=""></a></li>-->
 
-                    <li><div class="shopping">
+                   <!-- <li><div class="shopping">
                         <img src="../images/cart.png" >
                         <span class="quantity">0</span>
-                    </div></li>
+                    </div></li>-->
                     
                 </ul>
             </div>
@@ -47,7 +47,6 @@
         
   
     </div>
-  
     <div class="navbar">
         <a href="../php/home.php">Home</a>
         <a href="../php/aboutUs.php">About Us</a>

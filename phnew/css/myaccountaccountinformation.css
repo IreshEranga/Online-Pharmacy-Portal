@@ -303,3 +303,14 @@ a:active{
     border-radius: 0px;
     border-color: #59bae7;
   }
+
+  .right {
+    background-color: #e64f4f;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 87px;
+    cursor: pointer;
+    float: right;
+}

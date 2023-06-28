@@ -25,6 +25,7 @@ if (isset($_POST["signupbtn"])) {
     // Execute the statement
     if ($stmt->execute()) {
         echo "Inserted successfully";
+        header ('location: home.php');
     } else {
         echo "Error: " . $stmt->error;
     }
@@ -70,7 +71,7 @@ if (isset($_POST["signupbtn"])) {
 
                 <br><br>
                 <label for="mnumber"><b>Mobile Number</b></label><br><br>
-                <input type="tel" name="mnumber" placeholder="Enter Mobile Number" pattern="07[1,2,5,6,7,8][0-9]{7}" maxlength="10"  required><br><br>
+                <input type="tel" name="mnumber" placeholder="Enter Mobile Number" pattern="07[0,1,2,5,6,7,8][0-9]{7}" maxlength="10"  required><br><br>
 
                 <label for="email"><b>E mail</b></label><br><br>
                 <input type="email" name="email" placeholder="Enter Your E mail " required><br><br>

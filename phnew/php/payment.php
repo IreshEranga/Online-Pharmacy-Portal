@@ -194,7 +194,7 @@ if (isset($_POST["paybtn"])) {
       </div>
       <div class="form-group">
         <label for="cvv">CVV</label>
-        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+        <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="Enter CVV" required>
       </div>
       <!--
       <h2>Order Summary</h2>
@@ -236,19 +236,19 @@ if (isset($_POST["paybtn"])) {
             <a href="#">Pet</a>
         </div>
 
-        <div class="information"><br>
+        <div class="information">
             <h2>Imformation</h2><br>
             <a href="../php/aboutUs.php">About Us</a><br><br>
             <a href="#">Privacy Policy</a><br><br>
         </div>
 
-        <div class="customer-servise"><br><br>
+        <div class="customer-servise">
             <h2>Customer Service</h2><br>
             <a href="../php/FAQ.php">FAQ</a><br><br>
             <a href="../php/contact.php">Contact Us</a><br><br>
         </div>
 
-        <div class="followus"><br><br>
+        <div class="followus">
             <h2>Follow Us</h2><br>
             <button class="imgbtn"><img src="../images/facebook.png"></button>
             <button class="imgbtn"><img src="../images/youtube.png"></button>

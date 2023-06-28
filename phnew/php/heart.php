@@ -33,10 +33,10 @@
                     <li><a href="../php/SignIn.php">Sign In</a></li><!--
                     <li><a href="#"><img src="../images/cart.png" alt=""></a></li>-->
 
-                    <li><div class="shopping">
-                        <img src="../images/cart.png" >
+                   <!-- <li><div class="shopping">
+                        <img src="../images/cart.png" width="50px">
                         <span class="quantity">0</span>
-                    </div></li>
+                    </div></li>-->
                     
                 </ul>
             </div>

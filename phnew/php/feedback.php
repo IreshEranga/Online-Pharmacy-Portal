@@ -185,7 +185,7 @@ if (isset($_POST["submit"])){
           
           
 <!--Footer-->
-   
+   <!--
 <div class="footer">
 
     <div class="footer-yellow">
@@ -232,7 +232,7 @@ if (isset($_POST["submit"])){
         </div>
 
     </div>
-
+-->
     <div class="footer-black">
         <center><h4 class="h4">ALL RIGHTS RESERVED ©️ 2023 HEALTH CARE PHARMACY</h4></center>
     </div>
